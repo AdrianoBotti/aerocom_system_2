@@ -1,0 +1,7 @@
+#! /bin/sh
+# run the simulations to the the simulator according to the therethical results obtained with queueing theory
+cd ./src
+./AerocomSystem2 -n ../simulations:. DataLinkTest.ini -u Cmdenv -c singleAircraftSingleChannelConstantCapacityRho05 &
+./AerocomSystem2 -n ../simulations:. DataLinkTest.ini -u Cmdenv -c singleAircraftSingleChannelConstantCapacityRho09 &
+./AerocomSystem2 -n ../simulations:. DataLinkTest.ini -u Cmdenv -c singleAircraftSingleChannelConstantCapacityRho01 &
+./AerocomSystem2 -n ../simulations:. DataLinkTest.ini -u Cmdenv -c singleAircraftSingleChannelConstantCapacityRho075 &
